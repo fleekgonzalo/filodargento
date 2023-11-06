@@ -1,0 +1,200 @@
+{{ define "main" }}
+  <article class="text-center text-gray-700 dark:text-gray-200">
+    <div class="flex flex-col h-screen -mt-4 sm:-mt-16">
+      <div class="m-auto">
+        {{ with .Site.Params.titleimage }}
+          {{ $image := resources.Get . }}
+          <img
+            src="{{ ($image.Fit "200x200 webp").RelPermalink }}"
+            width="200"
+            height="200"
+            alt=""
+            class="mx-auto mb-2 rounded-full h-48 w-48 object-cover border border-gray-200"
+          />
+        {{ end }}
+        <h1 class="font-light text-5xl text-gray-500 dark:text-gray-200">
+          {{ .Title }}
+        </h1>
+        {{ .Content }}
+        <div
+          class="w-48 m-auto my-4 border-accent-400 border-2 rounded-sm"
+        ></div>
+        <div class="flex justify-center space-x-4">
+          {{ range .Site.Menus.social }}
+            <a
+              rel="me"
+              href="{{ .URL }}"
+              title="{{ .Name }}"
+              class="text-gray-700 dark:text-gray-200 hover:text-accent-400 transition-colors duration-200"
+            >
+              {{ $logoName := printf "%s%s" "logo-" (lower .Name) }}
+              {{ partial "icons/ionicons" (dict "logoname" $logoName "size" 10) }}
+            </a>
+          {{ end }}
+        </div>
+        +39 349 122 8163
+        <div>
+          <br/><br/>
+          <p class="fade-in">
+          Benvenuti nel mio angolo di affetto e assistenza dedicato agli anziani.<br/>
+          Ho abbracciato con passione la missione di garantire che gli anziani vivano ogni giorno con dignità e amore.<br/>
+          Con il mio impegno personale e la mia esperienza, offro un'assistenza su misura per creare esperienze preziose per i nostri anziani.<br/>
+          Unisciti a me per scoprire come possiamo rendere straordinaria la vita dei tuoi cari anziani.
+          </p>
+        </div>
+      </div>
+
+      <style>
+        @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+      /* Applicazione dell'animazione alla classe fade-in */
+      .fade-in {
+          animation: fadeIn 3s ease-in-out;
+      }
+
+        .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 28px;
+          width: 280px;
+        }
+        
+        .form-popup {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        .form-container input[type=text] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        .form-container input[type=text]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        .form-container .btn {
+          background-color: #767676;
+          color: white;
+          padding: 16px 50px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        }
+        
+        .form-container .cancel {
+          background-color: #040404;
+        }
+        
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+
+        textarea {
+          width: 100%;
+          height: 200px; /* Regola l'altezza come preferisci */
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          resize: vertical; /* Per consentire solo la ridimensionamento verticale */
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+      }
+      
+      /* Stile quando il textarea è in focus (attivo) */
+      textarea:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+      </style>
+
+      <button class="open-button" onclick="openForm()">Scrivimi</button>
+
+      <div class="form-popup" id="richiestaviaemail">
+        <label for="email"><b>- Contattami -</b></label><br/>
+        <form action="mailto:palmierisilvana7@pec.it" class="form-container">
+          <button type="send" class="btn">Email PEC</button>
+          </form>
+          <form action="mailto:palmierisilvana7@gmail.com" class="form-container">
+            <button type="send" class="btn">Email personale</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+        </form>
+        </div>
+      <script>
+        function openForm() {
+          document.getElementById("richiestaviaemail").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("richiestaviaemail").style.display = "none";
+        }
+
+        </script>
+
+      {{ if .Site.Params.recentpostsonindex | default true }}
+        <div class="mx-auto mb-10">
+          <svg
+            class="animate-bounce w-6 h-6 text-black dark:text-white cursor-pointer dark:stroke-current"
+            id="bouncing-arrow"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      {{ end }}
+    </div>
+
+    {{ if .Site.Params.recentpostsonindex | default true }}
+      <div id="featured-post" class="h-8"></div>
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-center font-light text-3xl mt-5">Post Recenti:</h2>
+        <div
+          class="w-48 m-auto my-8 border-accent-400 border-2 rounded-sm"
+        ></div>
+        {{ partial "widgets/featured-post-card.html" . }}
+
+
+        <div class="grid md:grid-cols-2 gap-4">
+          {{ range first 2 (after 1 (where .Site.RegularPages "Section" "articoli").ByPublishDate.Reverse) }}
+            {{ partial "widgets/post-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </article>
+{{ end }}

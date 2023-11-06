@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>
+    
+      Filo d&#39;argento -
+      
+      Filo d&#39;argento - il tuo sorriso è la mia missione
+  </title>
+    <meta
+      name="description"
+      content="A privacy focused theme for Hugo"
+    /><meta name="author" content="Silvana Palmieri" />
+  
+    <meta name="robots" content="index,follow" />
+  
+  <meta name="generator" content="Hugo 0.119.0">
+
+  <meta property="og:title" content="Filo d&#39;argento" />
+<meta property="og:description" content="A privacy focused theme for Hugo" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://filodargento.com/" /><meta property="og:image" content="http://filodargento.com/"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://filodargento.com/"/>
+
+<meta name="twitter:title" content="Filo d&#39;argento"/>
+<meta name="twitter:description" content="A privacy focused theme for Hugo"/>
+
+  
+  
+    <meta
+      name="msapplication-TileColor"
+      content="#5bbad5"
+    />
+  
+  
+    <meta name="theme-color" content="#ffffff" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo-favicon.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo-favicon-16x16.png" />
+  
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo-favicon-32x32.png" />
+  
+  
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  
+
+
+  
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Filo d\u0027argento - il tuo sorriso è la mia missione",
+    "url": "http:\/\/filodargento.com\/",
+    "description": "A privacy focused theme for Hugo",
+    "thumbnailUrl": "http:\/\/filodargento.com\/logo-favicon-32x32.png",
+    "license": "Copyright © 2023, Filo d\u0027argento, all rights reserved."
+}
+</script>
+
+
+  <link
+    rel="preload"
+    href="/fonts/Comfortaa-Light.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="/fonts/FiraSans-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="/fonts/Comfortaa-Bold.ttf"
+    as="font"
+    type="font/ttf"
+    crossorigin
+  />
+  <link rel="alternate" type="application/rss+xml" href="http://filodargento.com/index.xml" title="Filo d'argento - il tuo sorriso è la mia missione" />
+  
+    <link
+      rel="authorization_endpoint"
+      href="https://indieauth.com/auth"
+    />
+    <link
+      rel="token_endpoint"
+      href="https://tokens.indieauth.com/token"
+    />
+  
+  
+    <link
+      rel="webmention"
+      href="https://webmention.io/webmention"
+    />
+    <link
+      rel="pingback"
+      href="https://webmention.io/xmlrcp"
+    />
+  
+  <link rel="canonical" href="http://filodargento.com/" />
+
+  
+  
+  <link
+      rel="stylesheet"
+      href="http://filodargento.com/css/build.min.cb97647e997d0958566f29c61d240adc862c71e23bb10b47da4a335ffb25a8f1.css"
+      integrity="sha256-y5dkfpl9CVhWbynGHSQK3IYsceI7sQtH2kozX/slqPE="
+      crossorigin="anonymous"
+    />
+  
+  <script async defer data-website-id="1234567-abcd-efgh-0000-abcdefg1234" src="https://analytics.example.com/umami.js"></script>
+
+
+</head>
+
+  <body class="flex flex-col min-h-screen dark:bg-gray-900">
+    
+    <header
+  class="w-full bg-gray-200 dark:bg-black border-t-2 border-accent-400 sticky top-0 transition-shadow duration-300 hover:shadow-lg z-10"
+>
+  
+  <style type="text/css">
+    input#nav-toggle:checked ~ label#show-button {
+      display: none;
+    }
+
+    input#nav-toggle:checked ~ label#hide-button {
+      display: flex;
+    }
+
+    input#nav-toggle:checked ~ #nav-menu {
+      display: block;
+    }
+  </style>
+
+  <nav
+    class="flex items-center sm:justify-around justify-between flex-wrap py-2 px-2"
+  >
+    <a
+      href="http://filodargento.com/"
+      class="flex items-center text-gray-700 dark:text-gray-200 font-mono font-bold"
+    >
+      Filo d&#39;argento
+      <span class="animate-blink font-mono font-bold">|</span>
+    </a>
+
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      id="show-button"
+      for="nav-toggle"
+      class="flex items-center block sm:hidden text-gray-500 dark:text-gray-200 hover:text-accent-500"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
+      </svg>
+    </label>
+    <label
+      id="hide-button"
+      for="nav-toggle"
+      class="flex items-center hidden text-gray-500 dark:text-gray-200 hover:text-accent-400"
+    >
+      <svg
+        class="fill-current h-4 w-4"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"
+        />
+      </svg>
+    </label>
+
+    <ul
+      id="nav-menu"
+      class="sm:flex w-full sm:w-auto hidden sm:block mt-2 sm:mt-0 sm:space-x-2"
+    >
+      
+      
+      
+        <li>
+          <a
+            href="http://filodargento.com/articoli/"
+            class="text-gray-500 transition-colors duration-200 dark:text-gray-200 font-mono hover:text-accent-400 mx-2"
+            >/Articoli</a
+          >
+        </li>
+      
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+  <article class="text-center text-gray-700 dark:text-gray-200">
+    <div class="flex flex-col h-screen -mt-4 sm:-mt-16">
+      <div class="m-auto">
+        
+          
+          <img
+            src="/images/logo_hu672d92458e873514d27ff60a85e3f2f5_72295_200x200_fit_q75_h2_box.webp"
+            width="200"
+            height="200"
+            alt=""
+            class="mx-auto mb-2 rounded-full h-48 w-48 object-cover border border-gray-200"
+          />
+        
+        <h1 class="font-light text-5xl text-gray-500 dark:text-gray-200">
+          Filo d&#39;argento
+        </h1>
+        <p>Il tuo sorriso è la mia missione.</p>
+
+        <div
+          class="w-48 m-auto my-4 border-accent-400 border-2 rounded-sm"
+        ></div>
+        <div class="flex justify-center space-x-4">
+          
+            <a
+              rel="me"
+              href="https://facebook.com/#filodargento"
+              title="Facebook"
+              class="text-gray-700 dark:text-gray-200 hover:text-accent-400 transition-colors duration-200"
+            >
+              
+              
+
+
+  
+    <span class="inline-svg h-10 w-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+    </span>
+  
+
+
+            </a>
+          
+            <a
+              rel="me"
+              href="https://instagram.com/#filodargento"
+              title="Instagram"
+              class="text-gray-700 dark:text-gray-200 hover:text-accent-400 transition-colors duration-200"
+            >
+              
+              
+
+
+  
+    <span class="inline-svg h-10 w-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path fill="currentColor" d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+    </span>
+  
+
+
+            </a>
+          
+            <a
+              rel="me"
+              href="https://api.whatsapp.com/send?phone=393491228163"
+              title="Whatsapp"
+              class="text-gray-700 dark:text-gray-200 hover:text-accent-400 transition-colors duration-200"
+            >
+              
+              
+
+
+  
+    <span class="inline-svg h-10 w-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="currentColor" d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z" fill-rule="evenodd"/></svg>
+    </span>
+  
+
+
+            </a>
+          
+        </div>
+        +39 349 122 8163
+        <div>
+          <br/><br/>
+          <p class="fade-in">
+          Benvenuti nel mio angolo di affetto e assistenza dedicato agli anziani.<br/>
+          Ho abbracciato con passione la missione di garantire che gli anziani vivano ogni giorno con dignità e amore.<br/>
+          Con il mio impegno personale e la mia esperienza, offro un'assistenza su misura per creare esperienze preziose per i nostri anziani.<br/>
+          Unisciti a me per scoprire come possiamo rendere straordinaria la vita dei tuoi cari anziani.
+          </p>
+        </div>
+      </div>
+
+      <style>
+        @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+       
+      .fade-in {
+          animation: fadeIn 3s ease-in-out;
+      }
+
+        .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 28px;
+          width: 280px;
+        }
+        
+        .form-popup {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        .form-container input[type=text] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        .form-container input[type=text]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        .form-container .btn {
+          background-color: #767676;
+          color: white;
+          padding: 16px 50px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        }
+        
+        .form-container .cancel {
+          background-color: #040404;
+        }
+        
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+
+        textarea {
+          width: 100%;
+          height: 200px;  
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          resize: vertical;  
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+      }
+      
+       
+      textarea:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+      </style>
+
+      <button class="open-button" onclick="openForm()">Scrivimi</button>
+
+      <div class="form-popup" id="richiestaviaemail">
+        <label for="email"><b>- Contattami -</b></label><br/>
+        <form action="mailto:palmierisilvana7@pec.it" class="form-container">
+          <button type="send" class="btn">Email PEC</button>
+          </form>
+          <form action="mailto:palmierisilvana7@gmail.com" class="form-container">
+            <button type="send" class="btn">Email personale</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+        </form>
+        </div>
+      <script>
+        function openForm() {
+          document.getElementById("richiestaviaemail").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("richiestaviaemail").style.display = "none";
+        }
+
+        </script>
+
+      
+        <div class="mx-auto mb-10">
+          <svg
+            class="animate-bounce w-6 h-6 text-black dark:text-white cursor-pointer dark:stroke-current"
+            id="bouncing-arrow"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      
+    </div>
+
+    
+      <div id="featured-post" class="h-8"></div>
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-center font-light text-3xl mt-5">Post Recenti:</h2>
+        <div
+          class="w-48 m-auto my-8 border-accent-400 border-2 rounded-sm"
+        ></div>
+        
+  
+  <div
+    class="grid gap-0 md:grid-cols-3 grid-cols-1 bg-white dark:bg-gray-600 shadow-sm border-2 border-gray-200 rounded-lg mb-5 hover:shadow-xl transition-shadow"
+  >
+    
+      
+      <div class="md:col-span-2 col-span-1">
+        <a href="http://filodargento.com/articoli/chi-sono/" aria-label="Chi sono: il mio portfolio">
+          <img
+            src="/articoli/chi-sono/images/attestato_silvana_hu47cdcc0be45b185d77bcaf68142027b1_27702_750x318_fill_q100_h2_box_smart1.webp"
+            width="750"
+            height="318"
+            alt="Chi sono: il mio portfolio"
+            class="rounded-t-lg md:h-full md:rounded-bl-lg md:rounded-tl-lg md:rounded-tr-none object-cover"
+          />
+        </a>
+      </div>
+    
+    <div class="p-5 h-full ">
+      <a href="http://filodargento.com/articoli/chi-sono/" aria-label="Chi sono: il mio portfolio">
+        <h3
+          class="text-gray-900 dark:text-white font-bold text-2xl tracking-tight mb-2"
+        >
+          Chi sono: il mio portfolio
+        </h3>
+        <p class="text-gray-500 text-sm dark:text-gray-200">
+          September 29, 2023
+        </p>
+        <p class="font-normal text-gray-700 dark:text-gray-200 mb-3">
+          
+        </p>
+      </a>
+    </div>
+  </div>
+
+
+
+
+        <div class="grid md:grid-cols-2 gap-4">
+          
+            
+<div
+  class="bg-white dark:bg-gray-700 shadow-sm hover:shadow-lg transition-shadow border border-gray-200 rounded-lg mb-5"
+>
+  <div>
+    <a href="http://filodargento.com/articoli/assistenza-domiciliare/" aria-label="L&#39;Assistenza Domiciliare: Portando il Conforto a Casa Tua">
+      
+        
+        <img
+          src="/articoli/assistenza-domiciliare/images/post_hu4f9d938e9f93165fd564e75b8f56fafb_86260_580x192_fill_q100_h2_box_smart1.webp"
+          width="580"
+          height="192"
+          alt="L&#39;Assistenza Domiciliare: Portando il Conforto a Casa Tua"
+          class="h-full rounded-t-lg object-cover"
+        />
+      
+    </a>
+  </div>
+  <a href="http://filodargento.com/articoli/assistenza-domiciliare/">
+    <div class="p-5">
+      <h3
+        class="text-gray-900 dark:text-white font-bold text-2xl tracking-tight mb-2"
+      >
+        L&#39;Assistenza Domiciliare: Portando il Conforto a Casa Tua
+      </h3>
+      <p class="text-gray-500 text-sm dark:text-gray-200">
+        September 21, 2023
+      </p>
+      <p class="font-normal text-gray-700 dark:text-gray-200 mb-3">
+        
+          
+        
+      </p>
+    </div>
+  </a>
+</div>
+
+          
+            
+<div
+  class="bg-white dark:bg-gray-700 shadow-sm hover:shadow-lg transition-shadow border border-gray-200 rounded-lg mb-5"
+>
+  <div>
+    <a href="http://filodargento.com/articoli/cura-e-compassione/" aria-label="Cura e Compassione: il Cuore della Professione di un Operatore Socio Sanitario">
+      
+        
+        <img
+          src="/articoli/cura-e-compassione/images/mani_hu18b4072a3df60a9ae7eaaf0d2979acd2_62513_580x192_fill_q100_h2_box_smart1.webp"
+          width="580"
+          height="192"
+          alt="Cura e Compassione: il Cuore della Professione di un Operatore Socio Sanitario"
+          class="h-full rounded-t-lg object-cover"
+        />
+      
+    </a>
+  </div>
+  <a href="http://filodargento.com/articoli/cura-e-compassione/">
+    <div class="p-5">
+      <h3
+        class="text-gray-900 dark:text-white font-bold text-2xl tracking-tight mb-2"
+      >
+        Cura e Compassione: il Cuore della Professione di un Operatore Socio Sanitario
+      </h3>
+      <p class="text-gray-500 text-sm dark:text-gray-200">
+        September 21, 2019
+      </p>
+      <p class="font-normal text-gray-700 dark:text-gray-200 mb-3">
+        
+          
+        
+      </p>
+    </div>
+  </a>
+</div>
+
+          
+        </div>
+      </div>
+    
+  </article>
+
+    </main>
+    
+    &lt;<footer
+  class="bottom-0 w-full bg-gray-200 dark:bg-black p-4 text-xs text-center text-gray-700 dark:text-gray-200"
+>
+  <p>
+    <b>Contatti:</b><br/>
+    <a href="mailto:palmierisilvana7@pec.it">palmierisilvana7@pec.it</a><br/>
+    <a href="mailto:palmierisilvana7@gmail.com">palmierisilvana7@gmail.com</a><br/>
+    P. IVA 13083100969<br/><br/>
+    Informativa sulla privacy: il sito non fa uso di cookie.<br/>
+    Sito fatto con
+    <a href="https://gohugo.io" class="underline hover:text-accent-400">Hugo</a>
+    e
+    <a href="https://tailwindcss.com" class="underline hover:text-accent-400"
+      >TailwindCSS</a
+    >
+  </p>
+  <p class="footer-copyright">
+    Filo d&rsquo;argento 2023
+  </p>
+  <div class="hidden"></div>
+  
+    <div class="h-card hidden">
+  <p>
+    
+    
+    <a class="u-url" href="http://filodargento.com/">Filo d&#39;argento - il tuo sorriso è la mia missione</a>
+    created by
+    
+      
+      <img
+        class="u-photo"
+        src="/images/index_hu56726f80d43f528f1aedfb62f52e144e_15538_200x200_fit_q75_h2_box_3.webp"
+        width="200"
+        height="200"
+        alt="Silvana Palmieri"
+      />
+    <span class="p-name" rel="me"
+      >Silvana Palmieri</span
+    >
+    
+    (<span class="u-pronoun">she</span>/<span class="u-pronoun">her</span> pronouns, also known as <span class="p-nickname">silvanapalmieri</span> some places)
+    
+    in
+    
+     <span class="p-locality">Milano</span>,
+    
+     <span class="p-region">Lombardia</span>,
+    
+     <span class="p-country-name">Italia</span>.
+    
+  </p>
+  
+</div>
+
+  
+</footer>
+
+
+  
+  
+    <script src="http://filodargento.com/js/smoothScrollToNode.min.31b3d0fa0f4ba17ca51175fa99aff68a13a8cd68f767d919af6d6a8c8604c528.js" integrity="sha256-MbPQ&#43;g9LoXylEXX6ma/2ihOozWj3Z9kZr21qjIYExSg=" crossorigin="anonymous"></script>
+
+</body>
+</html>

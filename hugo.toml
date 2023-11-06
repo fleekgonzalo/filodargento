@@ -1,0 +1,110 @@
+title = "Filo d'argento - il tuo sorriso è la mia missione"
+languageCode = "it-IT"
+baseurl = "http://filodargento.com/"
+theme = "chringel"
+themesDir = "themes"
+
+author = "Silvana Palmieri"
+copyright = "Copyright © 2023, Filo d'argento, all rights reserved."
+
+pluralizelisttitles = false
+paginate = 10
+enableEmoji = true
+
+[Params]
+    name = "chringel"
+    description = "A privacy focused theme for Hugo"
+
+    github_user = "chringel21"
+    github_repo = "https://github.com/chringel21/chringel-hugo-theme"
+    github_banner = true
+
+    favicon = "logo-favicon.ico"
+
+    # Title to be displayed in header
+    headerTitle = "Filo d'argento"
+    # User image
+    titleImage = 'images/logo.jpg'
+    # Copyright text displayed in footer
+    footerCopyrightText = "Filo d'argento 2023"
+
+# Favicons config
+# Get your favicons from https://realfavicongenerator.net/
+# Put them in the 'static' folder
+[Params.favicons]
+  appleTouchIcon = '/logo-favicon.png'
+  icon32 = '/logo-favicon-32x32.png'
+  icon16 = '/logo-favicon-16x16.png'
+  manifest = '/site.webmanifest'
+  maskIcon = '/safari-pinned-tab.svg'
+  msApplicationTileColor = '#5bbad5'
+  themeColor = '#ffffff'
+
+# Isso configuration
+# https://posativ.org/isso/docs/configuration/client/
+[Params.isso]
+  enabled = true
+  data = "https://comments.exmaple.com/"
+  id = "thread-id"
+  css = true
+  lang = "en"
+  replyToSelf = true
+  requireAuthor = true
+  requireEmail = false
+  avatar = true
+  avatar-bg = "#f0f0f0"
+  jsLocation = "https://comments.example.com/js/embed.min.js"
+
+# Umami configuration
+# https://umami.is/docs/install
+[Params.umami]
+  enabled = true
+  websiteId = "1234567-abcd-efgh-0000-abcdefg1234"
+  jsLocation = "https://analytics.example.com/umami.js"
+
+# microformat2 h-card configuration
+# All params except 'fullName' are optional
+[Params.hcard]
+  avatar = "/images/index.png"
+  fullName = "Silvana Palmieri"
+  pronouns = [ "she", "her" ]
+  nickname = "silvanapalmieri"
+  showLocation = true
+  city = "Milano"
+  region = "Lombardia"
+  country = "Italia"
+
+[Params.indieweb]
+  authorizationEndpoint = "https://indieauth.com/auth"
+  tokenEndpoint = "https://tokens.indieauth.com/token"
+
+[Params.webmention]
+  webmentionUrl = "https://webmention.io"
+  webmentionEndpoint = "/webmention"
+  webmentionPingbackEndpoint = "/xmlrcp"
+
+# Social icons to be displayed on the front page
+[[menu.social]]
+  name = "Facebook"
+  url = "https://facebook.com/#filodargento"
+
+[[menu.social]]
+  name = "Instagram"
+  url = "https://instagram.com/#filodargento"
+
+[[menu.social]]
+  name = "Whatsapp"
+  url = "https://api.whatsapp.com/send?phone=393491228163"
+
+# To make purging of CSS classes work in production
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+
+[module]
+[[module.imports]]
+    path = 'images'
